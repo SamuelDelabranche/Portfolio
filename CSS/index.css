@@ -1,0 +1,24 @@
+:root{
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+}
