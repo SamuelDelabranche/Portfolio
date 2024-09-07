@@ -13,11 +13,17 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: var(--backGround-color);
+
 }
 
 a{
     text-decoration: none;
     color: white;
+}
+
+hr{
+    border: 3px solid white;
 }
 
 /* NAVBAR */
@@ -131,18 +137,298 @@ nav .right a:hover{
     flex: 4;
 }
 
-
-
-main {
-    background-color: var(--backGround-color);
-}
-
-
 /* SECTION 1 : Presentation */
 .presentation-section{
-    height: 100vh;
+    scroll-margin-top: 100px;
+    margin: 50px 130px;
+
+    margin-bottom: 50px;
 }
 
+.presentation-section .title{
+    font-weight: 600;
+    font-size: 32px;
+
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.presentation-section .sec1{
+    line-height: 1.7;
+}
+
+.presentation-section .sec2 {
+    line-height: 1.7;
+}
+
+.presentation-section .subtitle{
+    font-weight: 600;
+    font-size: 32px;
+
+    margin-top: 100px;
+
+    display: block;
+    text-decoration: underline;
+    
+}
+
+/* SECTION 2 : Parcours */
+.parcours-section .sideSide {
+    display: flex;
+}
+
+.parcours-section{
+    scroll-margin-top: 100px;
+    margin: 50px 130px;
+    
+
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+
+.parcours-section .text{
+    color:rgb(51, 50, 50);
+    font-size: 20px;
+}
+
+.parcours-section .title{
+    font-weight: 600;
+    font-size: 32px;
+
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    
+}
+
+.ligneVerticale{
+    width: 5px;
+    background-color: white;
+}
+
+.parcours-section .scolarite .formation{
+    margin-bottom: 50px;
+}
+
+.parcours-section .scolarite .formation li{
+    margin-left: 10px;
+}
+
+.parcours-section .scolarite {width: 50%;}
+.parcours-section .experience {width: 50%; padding-left: 50px;}
+
+.parcours-section .experience .formation li{
+    margin-left: 10px;
+}
+
+/* SECTION 2 : Skills */
+.skills-section .sideSide {
+    display: flex;
+}
+
+.skills-section{
+    scroll-margin-top: 100px;
+    margin: 50px 130px;
+    
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.skills-section .text{
+    color: rgb(51, 50, 50);
+    font-size: 20px;
+}
+
+.skills-section .title{
+    font-weight: 600;
+    font-size: 32px;
+
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.ligneVerticale{
+    width: 5px;
+    background-color: white;
+}
+
+.skills-section .scolarite .formation{
+    margin-bottom: 50px;
+}
+
+.skills-section .scolarite .formation li{
+    margin-left: 10px;
+}
+
+.skills-section .scolarite {
+    width: 50%;
+}
+
+.skills-section .experience {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.skills-section .experience .formation li{
+    margin-left: 10px;
+}
+
+
+/* SECTION 3 : Projets */
+.Projets-section{
+    scroll-margin-top: 100px;
+    margin: 50px 130px;
+    
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.Projets-section .text{
+    color: rgb(51, 50, 50);
+    font-size: 20px;
+}
+
+.Projets-section .title{
+    font-weight: 600;
+    font-size: 32px;
+
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+
+/* SECTION 3 : Projets */
+.Contact-section{
+    scroll-margin-top: 100px;
+    margin: 50px 130px;
+    
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.Contact-section .text{
+    color: rgb(51, 50, 50);
+    font-size: 20px;
+}
+
+.Contact-section .title{
+    font-weight: 600;
+    font-size: 32px;
+
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.Contact-section .sideSide {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-around;
+}
+
+.Contact-section .sideSide .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Contact-section .sideSide .formDiv {
+    background-color: #a0dce5e8;
+    margin-top: 30pxa ;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Contact-section .sideSide .inputBox input, 
+.Contact-section .sideSide .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background: transparent;
+
+}
+
+.Contact-section .sideSide .inputBox span {
+    position: absolute;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.Contact-section .sideSide .inputBox input:focus ~ span, 
+.Contact-section .sideSide .inputBox input:valid ~ span,
+.Contact-section .sideSide .inputBox textarea:focus ~ span, 
+.Contact-section .sideSide .inputBox textarea:valid ~ span {
+    color: red;
+    font-size: 12px;
+    transform: translateY(-12px);
+    transition: .2s;
+} 
+
+.Contact-section .sideSide .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.Contact-section .sideSide .inputBox input:hover {
+    color: #00bcd4;
+    background-color: #fff;
+}
+
+.Contact-section a {
+    color: black;
+}
+
+.Contact-section .Reseaux i {
+    font-size: 50px;
+    padding-right: 15px;
+    transition: .1s;
+}
+.Contact-section .Reseaux {
+    display: flex;
+}
+
+.Contact-section .Reseaux i:hover {
+    color: red;
+    scale: 1.1;
+
+}
+
+@media (max-width: 1350px)
+{
+    .accroche img {
+        display: none;
+    }
+    .accroche .accrochesub{
+        padding: 0 65px;
+    }
+
+}
 
 @media (max-width: 768px)
 {
@@ -153,7 +439,23 @@ main {
     nav .right a {
         margin: 0;
     }
+    
+    .accroche .accrochesub .text .textTitle{
+        font-size: 40px;
+    }
 
+    .accroche .accrochesub .text .textSubTitle{
+        font-size: 18px;
+    }
+
+    .accroche .accrochesub {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .presentation-section {
+        margin: 0 50px;
+    }
 }
 
 @media (max-width: 500px)

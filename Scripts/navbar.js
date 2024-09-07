@@ -12,5 +12,24 @@ function updateTitle()
     }
 }
 
+function scroll()
+{
+    document.querySelectorAll('a[href^="#"]').forEach(element => {element.addEventListener('click', function(e) 
+        { 
+            e.preventDefault();
+            const targetElement = document.querySelector(this.getAttribute("href"));
+
+            if(targetElement)
+            {
+                window.scroll({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                })
+            }
+        });
+    });
+}
+
+scroll()
 updateTitle()
 window.addEventListener("resize", updateTitle);
