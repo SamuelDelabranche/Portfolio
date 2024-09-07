@@ -1,6 +1,8 @@
 :root{
     --text-color: #1a1c20;
     --link-color: #4a76ee;
+    --hover-color: #3B82F6;
+    --backGround-color: #c9ebf0e8;
 }
 
 *{
@@ -15,10 +17,152 @@ body{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 /* NAVBAR */
 
 nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0px 8px 13px -3px rgba(0,0,0,0.20);
+    z-index: 100;
+}
+
+nav .left a {
+    font-size: 22px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+nav .right a:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.accroche{
+    padding-top: 80px;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../Ressources/img/Clouds-007-HQ-01.webp");
+    background-size: cover;
+    
+    display: flex;
+
+}
+
+.accroche .accrochesub{
+    display: flex;
+    padding: 0 130px;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: justify;
+}
+
+.accroche .accrochesub .text{
+    flex: 5;
+}
+
+.accroche .accrochesub .text .textTitle {
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.accroche .accrochesub .text .textTitle{
+    font-weight: 600;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    
+}
+.accroche .accrochesub .text .textSubTitle{
+    font-size: 25px;
+    
+}
+
+.accroche .accrochesub .text .Reseaux {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.accroche .accrochesub .text .Reseaux a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: var(--hover-color);
+    border-radius: 5px;
+
+    transition: .1s;
+    margin: 0 5px;
+}
+
+.accroche .accrochesub .text .Reseaux a:hover{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--hover-color);
+    border-radius: 5px;
+
+    margin: 0 5px;
+}
+
+.accroche .accrochesub img{
+    flex: 4;
+}
+
+
+
+main {
+    background-color: var(--backGround-color);
+}
+
+
+/* SECTION 1 : Presentation */
+.presentation-section{
+    height: 100vh;
+}
+
+
+@media (max-width: 768px)
+{
+    nav .right {
+        margin: 0 0 0 50px;
+    }
+
+    nav .right a {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 500px)
+{
+    nav .left {
+        display: none;
+    }
+    
+    nav .right {
+        margin: 0;
+    }
 }
